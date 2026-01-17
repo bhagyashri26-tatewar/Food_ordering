@@ -13,7 +13,7 @@ RUN apt-get update && apt-get install -y \
     libxml2-dev \
     zip \
     curl \
-    && docker-php-ext-install pdo_mysql mbstring exif pcntl bcmath gd
+   && docker-php-ext-install pdo pdo_mysql pdo_pgsql mbstring exif pcntl bcmath gd
 
 # Enable Apache rewrite
 RUN a2enmod rewrite
